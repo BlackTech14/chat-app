@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+}
+
+/* Centering the app */
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f6;
+}
+
+.app-container {
+  display: flex;
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Optional: Set max width for better responsiveness */
+  height: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 320px;
+  border-right: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+}
+
+/* Main content section */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Header styling */
+.header {
+  width: 100%; /* Full width */
+  height: 60px; /* Header height */
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Content body for chat list and chat window */
+.content-body {
+  display: flex;
+  flex: 1;
+}
+
+/* Chat List  */
+.chat-list-container {
+  width: 320px;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat window  */
+.chat-window {
+  flex: 1;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
