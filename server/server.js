@@ -3,25 +3,22 @@ const http = require('http');
 const { Server } = require('socket.io');
 const cors = require('cors');
 
-// Initialize Express App and Server
 const app = express();
 const server = http.createServer(app);
 
-// Setup Socket.IO with CORS
 const io = new Server(server, {
   cors: {
-    origin: '*', // Replace '*' with your frontend domain for production
+    origin: '*',
     methods: ['GET', 'POST']
   }
 });
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 
 
 
-let users = []; // Store all connected users
+let users = []; 
 
 // Handle incoming socket connections
 io.on('connection', (socket) => {
